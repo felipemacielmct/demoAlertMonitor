@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
+console.log('no ar');
+
 app.post('/ticket', (req, res) => {
     const alert = req.body;  // Aqui você recebe os dados do webhook
     // Criar ticket no sistema PraTIca ou realizar outro processo
